@@ -299,6 +299,7 @@ function turn_processing(x) {
     switch (stage) {
         case 0:
             comment.innerHTML = "<font size='7' color='#ffffff'>あなたは脱落しました。次の人に交代してください。</font>";
+            next.innerHTML = "<input type='button' value='次のプレイヤーへ' onclick='next_player()' style='width:200px;height:100px;font-size:20px;'>";
             stage += 1;
             alert("player1:" + player_life[0] + "\n"
                 + "player2:" + player_life[1] + "\n"
